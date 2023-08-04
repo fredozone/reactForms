@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+body {
+  background-color: #fdf3f4;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -16,6 +20,88 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.semicircle {
+  width: 100px;
+  height: 50px;
+  background-color: #f6d5da; /* Color de fondo del semicírculo */
+  border-radius: 50px 50px 0 0; /* Aplicamos un radio de borde de 50px para hacer el semicírculo */
+  overflow: hidden; /* Ocultamos la mitad inferior */
+}
+
+.card {
+  border-top-right-radius: 15px;
+  position: relative;
+  background-color: #f6d5da;
+  /* Gradiente lineal para el borde-top */
+}
+
+svg {
+  position: absolute;
+  top: -39px;
+  left: 17px;
+  color: #c13d60;
+}
+.title {
+  color: #c13d60;
+}
+button,
+input {
+  width: 100%;
+}
+
+input {
+  background-color: white;
+  color: black;
+  height: 27px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+
+.form-imputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 88px;
+}
+
+label {
+  width: 100%;
+  display: flex;
+  color: black;
+}
+
+p {
+  color: black;
+}
+.error {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color: red;
+}
+.button-submit {
+  background-color: #c13d60;
+  color: white;
+  border: 1px solid #c13d60;
+}
+
+.button-submit:hover {
+  background-color: #a22e4f;
+  color: white;
+  border: 1px solid #a22e4f;
+}
+
+.button-authenticate {
+  background-color: #e58799;
+  color: white;
+  border: 1px solid #e58799;
+}
+
+.button-authenticate:hover {
+  background-color: #d75c77;
+  color: white;
+  border: 1px solid #d75c77;
 }
 
 @keyframes logo-spin {
